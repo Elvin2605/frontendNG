@@ -1,0 +1,27 @@
+<!-- here we study about conditional rendering (Directives)
+when i click on the roles button i want the roles component to be rendered 
+when i click on the designation button i want the designation component to be rendered 
+
+we us ngIF for condition , To use this we have to import common module in the imports section of master.component.ts
+-->
+
+<div class="row">
+    <div class="col-12 text-center">
+        <div class="btn-group">
+            <button type="button" (click)="changeTab('Roles')" class="btn" 
+            [ngClass]="currentComponent == 'Roles' ? 'btn-success':'btn-primary'" >Roles</button>
+
+            <button type="button" (click)="changeTab('Designation')" class="btn" 
+            [ngClass]="currentComponent == 'Designation' ? 'btn-success':'btn-primary'" >Designation</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12" *ngIf="currentComponent == 'Roles'">
+        <app-roles></app-roles>
+    </div>
+    <div class="col-12" *ngIf="currentComponent == 'Designation'">
+        <app-designation></app-designation>
+    </div>
+    
+</div>

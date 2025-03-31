@@ -1,0 +1,142 @@
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Role Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let role of roleList ; let sno = index">
+                    <td>{{sno + 1}}</td>
+                    <td>{{role.role}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This code below is an example of interpolation in angular -->
+<!-- <div class="row">
+    <div class="col-3">
+        <p>{{firstName}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{age}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{currentDate}}</p>
+    </div>
+    <div class="col-3">
+        <p> {{selectedState}} </p>
+    </div>
+</div> -->
+
+
+<!-- This code below is the example of property binding in angular 
+ the div section with the ngModel is used for 2 way data binding and we have to import FormsModule in the roles.component.ts 
+ component decorator imports section -->
+<!-- <div class="row">
+    <div class="col-3">
+        <input type="text" [value]="firstName" class="form-control"/> 
+    </div>
+    <div class="col-3">
+        <input [type]="inputType">
+    </div>
+    <div class="col-3">
+        <input type="text" [(ngModel)]="firstName">
+    </div>
+    <div class="col-3">
+        <select [(ngModel)]="selectedState">
+            <option value="MH">MH</option>
+            <option value="MP">MP</option>
+            <option value="Goa">Goa</option>
+        </select>
+    </div>
+</div> -->
+
+<!-- 
+    EVENT BINDING IN ANGULAR
+    here we handle events (click) is same as onClick in js
+-->
+
+<!-- <div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="welcomeMessage()">Show alert</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showMessage('Welcome abhay')">Show alert</button>
+    </div>
+</div> -->
+
+<!-- DIRECTIVES 
+ structural directive (ngIF , ngFor),attribute directive(ngClass , ngStyle)
+ -->
+
